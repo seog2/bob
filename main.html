@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Poor+Story&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bb535d3b48.js" crossorigin="anonymous"></script>
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS -->
+  <script src="js/swiper.js"></script>
+
+  <title>밥멍냥</title>
+  <style>
+    .mySwieper2 {
+      position: static;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <i class="fa-solid fa-paw"></i>
+          <a href="#">밥멍냥</a>
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">BEST</a></li>
+          <li><a href="#">BOB</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+        </ul>
+        <ul class="navbar__links">
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">고객센터</a></li>
+          <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-bolt-lightning"></i></a></li>
+        </ul>
+        
+      </nav>
+    </header>
+    <article id="main-item">
+      <section class="visual-slide">
+        <!-- Swiper -->
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="card-slide">
+        <!-- Swiper -->
+        <div #swiperRef="" class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: red; width: 20%; height: 100px;">
+              <a href="#">
+                <img src="" alt="">
+                <h2>강아지밥</h2>
+                <p>유기농으로 진짜 좋아요</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="" alt="">
+                <h2>강아지밥</h2>
+                <p>유기농으로 진짜 좋아요</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="" alt="">
+                <h2>강아지밥</h2>
+                <p>유기농으로 진짜 좋아요</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="" alt="">
+                <h2>강아지밥</h2>
+                <p>유기농으로 진짜 좋아요</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </article>
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper1", {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         loop: true,
+
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper2", {
+         slidesPerView: 3,
+         centeredSlides: true,
+         spaceBetween: 30,
+
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+</body>
+</html>
